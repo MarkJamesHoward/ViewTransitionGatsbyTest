@@ -8,7 +8,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
   const ChangePage = async () => {
     await startViewTransition();
-    navigate("/Smudge");
+    navigate("/page1");
   };
 
   return (
