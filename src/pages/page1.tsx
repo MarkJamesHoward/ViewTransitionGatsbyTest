@@ -1,22 +1,19 @@
 import * as React from "react";
-import { HeadFC, Link, PageProps, navigate } from "gatsby";
+import { PageProps, navigate } from "gatsby";
 import useViewTransition from "./useViewTransition";
-import "./styles.css";
 
 const IndexPage: React.FC<PageProps> = () => {
   const startViewTransition = useViewTransition();
 
   const ChangePage = async () => {
     await startViewTransition();
-    navigate("/Smudge");
+    navigate("/");
   };
 
   return (
     <main>
-      <h1 style={{ viewTransitionName: "header", contain: "layout" }}>
-        Home Page
-      </h1>
-      <button onClick={() => ChangePage()}>Navigate to Page1</button>
+      <h1 style={{ viewTransitionName: "header", contain: "layout" }}>Page1</h1>
+      <button onClick={() => ChangePage()}>Home</button>
     </main>
   );
 };
