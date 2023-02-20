@@ -1,0 +1,30 @@
+.header {
+  view-transition-name: Header;
+  contain: layout;
+}
+
+.IncrementTransition {
+  view-transition-name: Increment;
+  contain: layout;
+}
+
+.pageStyles {
+  color: "#232129";
+  padding: 96;
+  fontfamily: "-apple-system, Roboto, sans-serif, serif";
+}
+
+/* ::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 1s;
+}
+
+::view-transition-group(root),
+::view-transition-group(Increment) {
+  animation-duration: 1s;
+}
+
+::view-transition-old(Increment),
+::view-transition-new(Increment) {
+  animation-duration: 1s;
+} */
